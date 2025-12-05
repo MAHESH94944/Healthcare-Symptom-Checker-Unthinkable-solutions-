@@ -5,12 +5,19 @@ Monorepo:
 - backend/
 - frontend/
 
-## Clone the Repository
+## Hosted Frontend
 
-```bash
-git clone https://github.com/MAHESH94944/Healthcare-Symptom-Checker-Unthinkable-solutions-.git
-cd Healthcare-Symptom-Checker-Unthinkable-solutions-
-```
+- Production (Vercel): https://healthcare-symptom-checker-unthinka-gamma.vercel.app/
+
+## Preview
+
+![UI Preview](image.png)
+
+> Tip: If the image above doesn’t load, replace the URL with a screenshot hosted in your repo. For example:
+>
+> - Add your screenshot to `frontend/public/screenshot.png`
+> - Then update the Markdown to:
+>   `![UI Preview](frontend/public/screenshot.png)`
 
 ## Run Locally
 
@@ -57,11 +64,3 @@ Start frontend:
 npm run dev
 # App: http://localhost:5173
 ```
-
-## Hosted Frontend
-
-- Production (Vercel): https://healthcare-symptom-checker-unthinka-gamma.vercel.app/
-
-Notes:
-
-- Frontend calls the backend via VITE_API_BASE. Configure it per environment.
