@@ -13,12 +13,6 @@ Monorepo:
 
 ![UI Preview](image.png)
 
-> Tip: If the image above doesn’t load, replace the URL with a screenshot hosted in your repo. For example:
->
-> - Add your screenshot to `frontend/public/screenshot.png`
-> - Then update the Markdown to:
->   `![UI Preview](frontend/public/screenshot.png)`
-
 ## Run Locally
 
 ### Backend (Node + Express)
