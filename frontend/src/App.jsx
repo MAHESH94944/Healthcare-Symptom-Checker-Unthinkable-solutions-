@@ -13,8 +13,10 @@ const App = () => {
     recommendations: "",
     disclaimer: "",
   });
-  const API_BASE = import.meta.env.VITE_API_BASE;
-  
+  const API_BASE =
+    import.meta.env.VITE_API_BASE ||
+    "https://healthcare-symptom-checker-unthinkable.onrender.com";
+
   const handleSubmit = async (symptomText) => {
     setError("");
     setLoading(true);
