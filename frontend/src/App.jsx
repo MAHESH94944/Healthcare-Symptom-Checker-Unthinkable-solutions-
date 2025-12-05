@@ -13,16 +13,16 @@ const App = () => {
     recommendations: "",
     disclaimer: "",
   });
-
+  const API_BASE = import.meta.env.VITE_API_BASE;
+  
   const handleSubmit = async (symptomText) => {
     setError("");
     setLoading(true);
     setResponseData({ conditions: "", recommendations: "", disclaimer: "" });
     try {
-      const { data } = await axios.post(
-        "http://localhost:5000/api/symptoms/check",
-        { symptomText }
-      );
+      const { data } = await axios.post(`${API_BASE}/api/symptoms/check`, {
+        symptomText,
+      });
       setResponseData({
         conditions: data?.conditions || "",
         recommendations: data?.recommendations || "",
